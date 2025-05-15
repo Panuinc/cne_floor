@@ -42,21 +42,24 @@ export default function MobileMenu() {
               </span>
             </Link>
             <Link
-              href="tel:+66"
+              href="tel:0909075310"
+              title="โทร 090-907-5310"
               className="flex items-center gap-2 py-2 border-b border-default"
             >
               <Phone />
               <span>Phone</span>
             </Link>
             <Link
-              href="/chat"
+              href="https://line.me/ti/p/buwWdN4vVx"
+              target="_blank"
               className="flex items-center gap-2 py-2 border-b border-default"
             >
               <Chat />
               <span>Chat</span>
             </Link>
             <Link
-              href="/map"
+              href="https://www.google.com/maps/dir//50,+ซอย+งามวงศ์วาน+57..."
+              target="_blank"
               className="flex items-center gap-2 py-2 border-b border-default"
             >
               <Map />

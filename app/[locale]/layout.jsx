@@ -45,15 +45,27 @@ export default async function RootLayout({ children }) {
                   Office&nbsp;For&nbsp;Rent
                 </span>
               </div>
-              <div className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
+              <Link
+                href="tel:0909075310"
+                title="โทร 090-907-5310"
+                className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl"
+              >
                 <Phone />
-              </div>
-              <div className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
+              </Link>
+              <Link
+                href="https://line.me/ti/p/buwWdN4vVx"
+                target="_blank"
+                className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl"
+              >
                 <Chat />
-              </div>
-              <div className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
+              </Link>
+              <Link
+                href="https://www.google.com/maps/dir//50,+ซอย+งามวงศ์วาน+57..."
+                target="_blank"
+                className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl"
+              >
                 <Map />
-              </div>
+              </Link>
               <div className="hidden lg:flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-xl">
                 <span>Menu</span>
                 <Star />
