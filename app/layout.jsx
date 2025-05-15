@@ -60,15 +60,15 @@ export default function RootLayout({ children }) {
               <En /> <Th />
             </div>
             <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-default bg-default rounded-xl">
-              <span>CONTACT</span>
-              <span>US</span>
+              <span>Contact</span>
+              <span>Us</span>
             </div>
             <div className="lg:hidden flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
               <Layers />
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-            1
+          <div className="flex items-center justify-center w-full h-full gap-2">
+            {children}
           </div>
         </div>
       </body>
