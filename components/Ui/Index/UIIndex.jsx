@@ -28,34 +28,31 @@ export default function UIIndex() {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full gap-2">
-      <div className="flex flex-col items-center justify-center w-full min-h-[500px] p-2 gap-2 border-2 border-dark border-dashed rounded-3xl">
-        <div className="flex flex-col lg:flex-row items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-          <div className="flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-            <span>1</span>
-          </div>
-          <div className="flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-            <span>{t("header")}</span>
-          </div>
+      <div className="flex flex-col items-center justify-center w-full h-full px-2 py-20 gap-2 border-2 border-default rounded-3xl">
+        <div className="flex items-center justify-center w-full h-full p-4 gap-2 text-5xl font-[600]">
+          <span>{t("header")}</span>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-          <div className="flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-            <span>3</span>
-          </div>
-          <div className="flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-            <span>4</span>
-          </div>
+        <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-3xl font-[600]">
+          <span>{t("title")}</span>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-          <div className="flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
-            <span>
-              50 Soi Ngamwongwan 57, Lat Yao Subdistrict, Chatuchak District,
-              Bangkok 10900
-            </span>
-          </div>
+        <div className="flex items-center justify-end w-full h-full p-4 gap-2 text-xl font-[600]">
+          <span>{t("description")}</span>
+        </div>
+        <div className="flex items-center justify-center w-full h-full p-4 gap-2 text-center text-md">
+          <span>{t("promp")}</span>
+        </div>
+        <div className="flex items-center justify-center w-full h-full p-4 gap-2">
+          <Link
+            href="https://line.me/ti/p/buwWdN4vVx"
+            target="_blank"
+            className="flex items-center justify-center w-2/12 h-full p-4 gap-2 rounded-lg bg-white shadow-md transition-all duration-300 hover:bg-dark-100 hover:shadow-lg hover:scale-105 active:scale-95 active:bg-dark-200"
+          >
+            Click Now!
+          </Link>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2 border-2 border-dark border-dashed rounded-3xl">
-        <div className="flex items-center justify-start w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
+      <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2 rounded-3xl">
+        <div className="flex items-center justify-start w-full h-full p-2 gap-2">
           How To Rent
         </div>
         <div className="flex flex-row items-center justify-evenly w-full h-full p-2 gap-2">
@@ -91,14 +88,14 @@ export default function UIIndex() {
             />
           </div>
         </div>
-        <div className="flex items-center justify-end w-full h-full p-2 gap-2 border-2 border-dark border-dashed">
+        <div className="flex items-center justify-end w-full h-full p-2 gap-2">
           <span>Contact : </span>
           <span>0909075310</span>
           <span>0896995678</span>
           <span>0816444464</span>
         </div>
       </div>
-      <div className="flex items-center justify-center w-full min-h-[500px] p-2 gap-2 border-2 border-dark border-dashed bg-default rounded-3xl">
+      <div className="flex items-center justify-center w-full min-h-[500px] p-2 gap-2 bg-default rounded-3xl">
         <div className="w-11/12 h-full p-2 gap-2">
           <Swiper
             modules={[Autoplay]}
@@ -143,7 +140,6 @@ export default function UIIndex() {
           </Swiper>
         </div>
       </div>
-
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
@@ -167,8 +163,136 @@ export default function UIIndex() {
           </div>
         </div>
       )}
-      <div className="flex flex-col items-center justify-center w-full min-h-[500px] p-2 gap-2 border-2 border-dark border-dashed rounded-3xl">
-        1
+      <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2 rounded-3xl">
+        <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2">
+          <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
+            <Image
+              src="/images/floorPlan/floor2.png"
+              alt="floor2"
+              width={300}
+              height={300}
+              priority
+              className="transition-transform duration-300 group-hover:scale-150 rounded-xl"
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
+            <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-xl font-[600]">
+              2nd Floor
+            </div>
+            <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-md font-[600]">
+              สำนักงานแบบแบ่งเช่า ที่จอดรถห้องละ 1 คัน
+            </div>
+
+            <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
+              <span className="flex items-center justify-start w-full h-full p-2 gap-2">
+                ✅ ห้อง 201 พื้นที่ 65.5 ตรม. *300 / ตร.ม. ไม่รวมไฟฟ้า
+              </span>
+            </div>
+
+            <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
+              <span className="flex items-center justify-start w-full h-full p-2 gap-2">
+                ✅ ห้อง 202 พื้นที่ 35 ตรม. *400 / ตร.ม. รวมไฟฟ้า
+              </span>
+            </div>
+
+            <div className="relative flex items-center justify-start w-full h-full p-4 gap-2 border-2 border-red-400 bg-red-50 text-md font-[600] rounded-lg">
+              ❌ ห้อง 203 พื้นที่ 30 ตรม. *300 / ตร.ม. ไม่รวมไฟฟ้า
+              <div className="absolute -top-2 right-2 bg-red-500 text-white text-sm font-[600] px-4 py-2 rounded-lg">
+                เช่าแล้ว
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2">
+          <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
+            <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-xl font-[600]">
+              3rd Floor
+            </div>
+            <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-md font-[600]">
+              สำนักงานแบบเช่าทั้งชั้น ที่จอดรถ 2 คัน
+            </div>
+
+            <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
+              <span className="flex items-center justify-start w-full h-full p-2 gap-2">
+                ✅ สำนักงานแบบเช่าทั้งชั้น บนพื้นที่กว่า 368 ตร.ม เริ่มต้นเพียง
+                300 / ตร.ม ไม่รวมค่าไฟฟ้า
+              </span>
+            </div>
+          </div>
+          <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
+            <Image
+              src="/images/floorPlan/floor4.png"
+              alt="floor4"
+              width={300}
+              height={300}
+              priority
+              className="transition-transform duration-300 group-hover:scale-150 rounded-xl"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2">
+          <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
+            <Image
+              src="/images/floorPlan/floor2.png"
+              alt="floor2"
+              width={300}
+              height={300}
+              priority
+              className="transition-transform duration-300 group-hover:scale-150 rounded-xl"
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
+            <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-xl font-[600]">
+              4th Floor
+            </div>
+            <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-md font-[600]">
+              สำนักงานแบบเช่าทั้งชั้น ที่จอดรถ 2 คัน
+            </div>
+
+            <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
+              <span className="flex items-center justify-start w-full h-full p-2 gap-2">
+                ✅ สำนักงานแบบเช่าทั้งชั้น บนพื้นที่กว่า 368 ตร.ม เริ่มต้นเพียง
+                300 / ตร.ม ไม่รวมค่าไฟฟ้า
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2">
+          <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
+            <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-xl font-[600]">
+              9th Floor
+            </div>
+            <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-md font-[600]">
+              สำนักงานแบบแบ่งเช่า ที่จอดรถห้องละ 1 คัน
+            </div>
+
+            <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
+              <span className="flex items-center justify-start w-full h-full p-2 gap-2">
+                ✅ ห้อง 901 พื้นที่ 27 ตรม. *400 / ตร.ม. รวมไฟฟ้า
+              </span>
+            </div>
+            <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
+              <span className="flex items-center justify-start w-full h-full p-2 gap-2">
+                ✅ ห้อง 903 พื้นที่ 77.5 ตรม. *400 / ตร.ม. รวมไฟฟ้า
+              </span>
+            </div>
+            <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
+              <span className="flex items-center justify-start w-full h-full p-2 gap-2">
+                ✅ ห้อง 904 พื้นที่ 77 ตรม. *400 / ตร.ม. รวมไฟฟ้า
+              </span>
+            </div>
+          </div>
+          <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
+            <Image
+              src="/images/floorPlan/floor9.png"
+              alt="floor9"
+              width={300}
+              height={300}
+              priority
+              className="transition-transform duration-300 group-hover:scale-150 rounded-xl"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
