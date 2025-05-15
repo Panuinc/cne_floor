@@ -8,11 +8,14 @@ export default function MobileMenu() {
   const [open, setOpen] = useState(false);
   return (
     <>
+      <div className="lg:hidden flex items-center justify-center h-full px-4 py-2 gap-2 border-2 border-secondary rounded-xl">
+        <LanguageSwitcher />
+      </div>
       <button
         type="button"
         aria-label="Toggle menu"
         onClick={() => setOpen(!open)}
-        className="lg:hidden flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl"
+        className="lg:hidden flex items-center justify-center h-full px-4 py-2 gap-2 border-2 border-secondary rounded-xl"
       >
         <Layers />
       </button>
@@ -33,8 +36,8 @@ export default function MobileMenu() {
               ✕
             </button>
             <Link
-              className="flex items-center gap-2 border-b border-default pb-2"
-              href="#"
+              className="flex items-center justify-between gap-2 border-b border-default pb-2"
+              href="/"
             >
               <span className="font-semibold">Channakorn</span>
               <span className="text-neutral-500">
@@ -65,7 +68,7 @@ export default function MobileMenu() {
               <Map />
               <span>Map</span>
             </Link>
-            <Link
+            {/* <Link
               href="/menu"
               className="flex items-center gap-2 py-2 border-b border-default"
             >
@@ -77,10 +80,7 @@ export default function MobileMenu() {
               className="flex items-center gap-2 py-2 border-b border-default"
             >
               <span>Contact&nbsp;Us</span>
-            </Link>
-            <div className="pt-2">
-              <LanguageSwitcher />
-            </div>
+            </Link> */}
           </nav>
         </div>
       )}
