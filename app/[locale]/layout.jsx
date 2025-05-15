@@ -67,14 +67,15 @@ export default async function RootLayout({ children }) {
                 <Map />
               </Link>
               <div className="hidden lg:flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-xl">
-                <span>Menu</span>
+                <span>{""}</span>
                 <Star />
               </div>
               <div className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
                 <LanguageSwitcher />
               </div>
               <Link
-                href="/contact"
+                href="tel:0909075310"
+                title="โทร 090-907-5310"
                 className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-default bg-default rounded-xl"
               >
                 <span className="font-[600]">Contact&nbsp;Us</span>
