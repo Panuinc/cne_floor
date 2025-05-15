@@ -14,18 +14,6 @@ export default function UIIndex() {
   const t = useTranslations();
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const images = [
-    { subtitle: "Floor 1", img: "1" },
-    { subtitle: "Floor 2", img: "2" },
-    { subtitle: "Floor 3", img: "3" },
-    { subtitle: "Floor 4", img: "4" },
-    { subtitle: "Floor 5", img: "5" },
-    { subtitle: "Floor 6", img: "6" },
-    { subtitle: "Floor 7", img: "7" },
-    { subtitle: "Floor 8", img: "8" },
-    { subtitle: "Floor 9", img: "9" },
-  ];
-
   return (
     <div className="flex flex-col items-center justify-center w-full h-full gap-2">
       <div className="flex flex-col items-center justify-center w-full h-full px-2 py-20 gap-2 border-2 border-default rounded-3xl">
@@ -39,7 +27,7 @@ export default function UIIndex() {
           <span>{t("description")}</span>
         </div>
         <div className="flex items-center justify-end w-full h-full p-4 gap-2">
-          <span className="flex items-center justify-center w-1/2 h-full p-4 gap-2 text-center text-sm">
+          <span className="flex items-center justify-center w-1/2 h-full p-4 gap-2 text-center text-sm whitespace-pre-line">
             {t("promp")}
           </span>
         </div>
@@ -49,13 +37,14 @@ export default function UIIndex() {
             target="_blank"
             className="flex items-center justify-center w-2/12 h-full p-4 gap-2 rounded-lg bg-white shadow-md transition-all duration-300 hover:bg-dark-100 hover:shadow-lg hover:scale-105 active:scale-95 active:bg-dark-200"
           >
-            Click Now!
+            {t("clickNow")}
           </Link>
         </div>
       </div>
+
       <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2 rounded-3xl">
         <div className="flex items-center justify-start w-full h-full p-2 gap-2">
-          How To Rent
+          {t("howToRent")}
         </div>
         <div className="flex flex-row items-center justify-evenly w-full h-full p-2 gap-2">
           <div className="flex items-center justify-center min-w-38 min-h-38 p-2 gap-2 rounded-full bg-white shadow-md">
@@ -91,12 +80,13 @@ export default function UIIndex() {
           </div>
         </div>
         <div className="flex items-center justify-end w-full h-full p-2 gap-2">
-          <span>Contact : </span>
+          <span>{t("contact")}</span>
           <span>0909075310</span>
           <span>0896995678</span>
           <span>0816444464</span>
         </div>
       </div>
+
       <div className="flex items-center justify-center w-full min-h-[500px] p-2 gap-2 bg-default rounded-3xl">
         <div className="w-11/12 h-full p-2 gap-2">
           <Swiper
@@ -111,37 +101,234 @@ export default function UIIndex() {
             }}
             className="w-full h-[420px]"
           >
-            {images.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
-                  onClick={() =>
-                    setSelectedImage(`/images/floorPlan/floor${item.img}.png`)
-                  }
-                >
-                  <Image
-                    src={`/images/floorPlan/floor${item.img}.png`}
-                    alt={item.subtitle}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    unoptimized
-                    priority
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
-                    <div>{item.subtitle}</div>
-                  </div>
-                  <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
-                    LEARN DETAILS
-                  </button>
-                  <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
-                    →
-                  </button>
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor1.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor1.png"
+                  alt={t("floor1")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor1")}</div>
                 </div>
-              </SwiperSlide>
-            ))}
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor2.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor2.png"
+                  alt={t("floor2")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor2")}</div>
+                </div>
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor3.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor3.png"
+                  alt={t("floor3")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor3")}</div>
+                </div>
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor4.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor4.png"
+                  alt={t("floor4")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor4")}</div>
+                </div>
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor5.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor5.png"
+                  alt={t("floor5")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor5")}</div>
+                </div>
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor6.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor6.png"
+                  alt={t("floor6")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor6")}</div>
+                </div>
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor7.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor7.png"
+                  alt={t("floor7")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor7")}</div>
+                </div>
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor8.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor8.png"
+                  alt={t("floor8")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor8")}</div>
+                </div>
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                onClick={() => setSelectedImage("/images/floorPlan/floor9.png")}
+              >
+                <Image
+                  src="/images/floorPlan/floor9.png"
+                  alt={t("floor9")}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
+                  <div>{t("floor9")}</div>
+                </div>
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                  {t("learnDetails")}
+                </button>
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                  →
+                </button>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
+
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
@@ -165,6 +352,7 @@ export default function UIIndex() {
           </div>
         </div>
       )}
+
       <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2 rounded-3xl">
         <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2">
           <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
@@ -179,45 +367,45 @@ export default function UIIndex() {
           </div>
           <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
             <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-xl font-[600]">
-              2nd Floor
+              {t("secondFloor")}
             </div>
             <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-md font-[600]">
-              สำนักงานแบบแบ่งเช่า ที่จอดรถห้องละ 1 คัน
+              {t("dividedOffice")}
             </div>
 
             <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
               <span className="flex items-center justify-start w-full h-full p-2 gap-2">
-                ✅ ห้อง 201 พื้นที่ 65.5 ตรม. *300 / ตร.ม. ไม่รวมไฟฟ้า
+                ✅ {t("room201")}
               </span>
             </div>
 
             <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
               <span className="flex items-center justify-start w-full h-full p-2 gap-2">
-                ✅ ห้อง 202 พื้นที่ 35 ตรม. *400 / ตร.ม. รวมไฟฟ้า
+                ✅ {t("room202")}
               </span>
             </div>
 
             <div className="relative flex items-center justify-start w-full h-full p-4 gap-2 border-2 border-red-400 bg-red-50 text-md font-[600] rounded-lg">
-              ❌ ห้อง 203 พื้นที่ 30 ตรม. *300 / ตร.ม. ไม่รวมไฟฟ้า
+              ❌ {t("room203")}
               <div className="absolute -top-2 right-2 bg-red-500 text-white text-sm font-[600] px-4 py-2 rounded-lg">
-                เช่าแล้ว
+                {t("rented")}
               </div>
             </div>
           </div>
         </div>
+
         <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2">
           <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
             <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-xl font-[600]">
-              3rd Floor
+              {t("thirdFloor")}
             </div>
             <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-md font-[600]">
-              สำนักงานแบบเช่าทั้งชั้น ที่จอดรถ 2 คัน
+              {t("wholeFloorOffice")}
             </div>
 
             <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
               <span className="flex items-center justify-start w-full h-full p-2 gap-2">
-                ✅ สำนักงานแบบเช่าทั้งชั้น บนพื้นที่กว่า 368 ตร.ม เริ่มต้นเพียง
-                300 / ตร.ม ไม่รวมค่าไฟฟ้า
+                ✅ {t("wholeFloorDesc")}
               </span>
             </div>
           </div>
@@ -232,6 +420,7 @@ export default function UIIndex() {
             />
           </div>
         </div>
+
         <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2">
           <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
             <Image
@@ -245,42 +434,42 @@ export default function UIIndex() {
           </div>
           <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
             <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-xl font-[600]">
-              4th Floor
+              {t("fourthFloor")}
             </div>
             <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-md font-[600]">
-              สำนักงานแบบเช่าทั้งชั้น ที่จอดรถ 2 คัน
+              {t("wholeFloorOffice")}
             </div>
 
             <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
               <span className="flex items-center justify-start w-full h-full p-2 gap-2">
-                ✅ สำนักงานแบบเช่าทั้งชั้น บนพื้นที่กว่า 368 ตร.ม เริ่มต้นเพียง
-                300 / ตร.ม ไม่รวมค่าไฟฟ้า
+                ✅ {t("wholeFloorDesc")}
               </span>
             </div>
           </div>
         </div>
+
         <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2">
           <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
             <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-xl font-[600]">
-              9th Floor
+              {t("ninthFloor")}
             </div>
             <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-md font-[600]">
-              สำนักงานแบบแบ่งเช่า ที่จอดรถห้องละ 1 คัน
+              {t("dividedOffice")}
             </div>
 
             <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
               <span className="flex items-center justify-start w-full h-full p-2 gap-2">
-                ✅ ห้อง 901 พื้นที่ 27 ตรม. *400 / ตร.ม. รวมไฟฟ้า
+                ✅ {t("room901")}
               </span>
             </div>
             <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
               <span className="flex items-center justify-start w-full h-full p-2 gap-2">
-                ✅ ห้อง 903 พื้นที่ 77.5 ตรม. *400 / ตร.ม. รวมไฟฟ้า
+                ✅ {t("room903")}
               </span>
             </div>
             <div className="relative flex items-center justify-center w-full h-full p-2 gap-2 border-2 border-green-400 bg-green-50 text-md font-[600] rounded-lg">
               <span className="flex items-center justify-start w-full h-full p-2 gap-2">
-                ✅ ห้อง 904 พื้นที่ 77 ตรม. *400 / ตร.ม. รวมไฟฟ้า
+                ✅ {t("room904")}
               </span>
             </div>
           </div>
