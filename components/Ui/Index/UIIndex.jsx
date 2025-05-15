@@ -472,6 +472,12 @@ export default function UIIndex() {
                 ✅ {t("room904")}
               </span>
             </div>
+            <div className="relative flex items-center justify-start w-full h-full p-4 gap-2 border-2 border-red-400 bg-red-50 text-md font-[600] rounded-lg">
+              ❌ {t("room905")}
+              <div className="absolute -top-2 right-2 bg-red-500 text-white text-sm font-[600] px-4 py-2 rounded-lg">
+                {t("rented")}
+              </div>
+            </div>
           </div>
           <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
             <Image
