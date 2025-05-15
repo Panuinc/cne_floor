@@ -9,19 +9,19 @@ export default function LanguageSwitcher() {
 
   const [, locale, ...rest] = pathname.split("/");
 
-  const other = locale === "en" ? "th" : "en";
+  const nextLocale = locale === "en" ? "th" : "en";
+  const switchTo = "/" + [nextLocale, ...rest].join("/");
 
-  const switchTo = "/" + [other, ...rest].join("/");
+  const Icon = locale === "en" ? En : Th;
 
   return (
     <button
       type="button"
       onClick={() => router.push(switchTo)}
-      className="flex items-center justify-center gap-2"
+      className="flex items-center justify-center px-2"
       aria-label="Switch language"
     >
-      <En className={locale === "en" ? "opacity-100" : "opacity-30"} />
-      <Th className={locale === "th" ? "opacity-100" : "opacity-30"} />
+      <Icon />
     </button>
   );
 }
