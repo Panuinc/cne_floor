@@ -35,35 +35,35 @@ export default function RootLayout({ children }) {
       <body
         className={`${league_Spartan.variable} ${prompt.variable} antialiased`}
       >
-        <div className="flex flex-col items-center justify-start w-full min-h-screen p-2 gap-2 border-2 border-dark border-dashed">
-          <div className="flex flex-row items-center justify-center w-full h-16 p-2 gap-2 border-2 border-dark border-dashed">
-            <div className="flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-lg">
+        <div className="flex flex-col items-center justify-start w-full min-h-screen py-2 gap-2">
+          <div className="flex flex-row items-center justify-center w-full h-16 px-10 py-2 gap-2">
+            <div className="flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-xl">
               <span className="font-[600]">Channakorn</span>
               <span className="text-[#555555]">Office For Rent</span>
             </div>
-            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-lg">
+            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
               <Phone />
             </div>
-            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-lg">
+            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
               <Chat />
             </div>
-            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-lg">
+            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
               <Map />
             </div>
-            <div className="flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-lg">
+            <div className="flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-xl">
               <span>Menu</span>
               <span>
                 <Star />
               </span>
             </div>
-            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-default bg-default rounded-lg">
+            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
+              <En /> <Th />
+            </div>
+            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-default bg-default rounded-xl">
               <span>CONTACT</span>
               <span>US</span>
             </div>
-            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-lg">
-              <En /> <Th />
-            </div>
-            <div className="flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-lg">
+            <div className="lg:hidden flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
               <Layers />
             </div>
           </div>

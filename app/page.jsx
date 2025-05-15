@@ -1,9 +1,10 @@
-import React from 'react'
+import UIIndex from "@/components/Ui/Index/UIIndex";
+import React from "react";
 
 export default function page() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <UIIndex />
+    </>
+  );
 }
