@@ -11,8 +11,9 @@ module.exports = {
       colors: {
         white: "#FFFFFF",
         dark: "#000000",
-        default: "#D9D9D9",
+        default: "#F5F5F5",
         primary: "#FF4752",
+        secondary: "#E1E1E1",
       },
       fontFamily: {
         prompt: ["var(--prompt)"],
