@@ -26,8 +26,8 @@ export default function UIIndex() {
         <div className="flex items-center justify-end w-full h-full p-4 gap-2 text-xl font-[600]">
           <span>{t("description")}</span>
         </div>
-        <div className="flex items-center justify-end w-full h-full p-4 gap-2">
-          <span className="flex items-center justify-center w-1/2 h-full p-4 gap-2 text-center text-sm whitespace-pre-line">
+        <div className="flex items-center justify-center w-full h-full p-4 gap-2">
+          <span className="flex items-center justify-start w-full h-full p-4 gap-2 text-sm whitespace-pre-line">
             {t("promp")}
           </span>
         </div>
