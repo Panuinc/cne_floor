@@ -29,17 +29,19 @@ export default function UIIndex() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full gap-2">
       <div className="flex flex-col items-center justify-center w-full h-full px-2 py-20 gap-2 border-2 border-default rounded-3xl">
-        <div className="flex items-center justify-center w-full h-full p-4 gap-2 text-5xl font-[600]">
+        <div className="flex items-center justify-end w-full h-full p-4 gap-2 text-5xl font-[600]">
           <span>{t("header")}</span>
         </div>
-        <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-3xl font-[600]">
+        <div className="flex items-center justify-center w-full h-full p-4 gap-2 text-3xl font-[600]">
           <span>{t("title")}</span>
         </div>
         <div className="flex items-center justify-end w-full h-full p-4 gap-2 text-xl font-[600]">
           <span>{t("description")}</span>
         </div>
-        <div className="flex items-center justify-center w-full h-full p-4 gap-2 text-center text-md">
-          <span>{t("promp")}</span>
+        <div className="flex items-center justify-end w-full h-full p-4 gap-2">
+          <span className="flex items-center justify-center w-1/2 h-full p-4 gap-2 text-center text-sm">
+            {t("promp")}
+          </span>
         </div>
         <div className="flex items-center justify-center w-full h-full p-4 gap-2">
           <Link
