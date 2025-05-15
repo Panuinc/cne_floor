@@ -1,14 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Prompt, League_Spartan } from "next/font/google";
+import "@/style/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const prompt = Prompt({
   subsets: ["latin"],
+  variable: "--prompt",
+  weight: "300",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const league_Spartan = League_Spartan({
   subsets: ["latin"],
+  variable: "--league_Spartan",
+  weight: "300",
+  display: "swap",
 });
 
 export const metadata = {
@@ -19,7 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${league_Spartan.variable} ${prompt.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--league_Spartan), var(--prompt);
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+[lang|="th"] {
+  font-family: var(--prompt), sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
