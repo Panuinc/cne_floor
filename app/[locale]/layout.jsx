@@ -24,7 +24,7 @@ export const metadata = {
   metadataBase: new URL("https://cnefloorrent.com"),
   title: "ออฟฟิศให้เช่า งามวงศ์วาน | อาคาร 9 ชั้น ใกล้เดอะมอลล์ พร้อมที่จอดรถ",
   description:
-    "สำนักงานให้เช่าใจกลางงามวงศ์วาน ทำเลทองติดถนน ใกล้เดอะมอลล์ อาคารสูง 9 ชั้น พื้นที่เริ่มต้น 30 ตร.ม. พร้อมแอร์ ระบบรักษาความปลอดภัย และที่จอดรถ",
+    "สำนักงานให้เช่าใจกลางงามวงศ์วาน อาคารสูง 9 ชั้น พื้นที่เริ่มต้น 30 ตร.ม. พร้อมแอร์ ระบบรักษาความปลอดภัย และที่จอดรถ",
   keywords: [
     "ออฟฟิศให้เช่า งามวงศ์วาน",
     "สำนักงานให้เช่า งามวงศ์วาน",
@@ -39,7 +39,7 @@ export const metadata = {
   ],
   icons: {
     icon: "/images/logoCompany/com-1.png",
-    apple: "/images/logoCompany/com-1.png",
+    apple: "/opengraph-image.jpg",
   },
   openGraph: {
     title:
@@ -52,10 +52,10 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/images/opengraph-image.jpg",
+        url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
-        alt: "ออฟฟิศให้เช่า งามวงศ์วาน - อาคาร 9 ชั้น พร้อมที่จอดรถ",
+        alt: "Channakorn Building - ออฟฟิศให้เช่า งามวงศ์วาน",
       },
     ],
   },
@@ -64,8 +64,8 @@ export const metadata = {
     title:
       "ออฟฟิศให้เช่า งามวงศ์วาน | อาคาร 9 ชั้น ใกล้เดอะมอลล์ พร้อมที่จอดรถ",
     description:
-      "สำนักงานให้เช่าใจกลางงามวงศ์วาน อาคารสูง 9 ชั้น ใกล้เดอะมอลล์ พร้อมที่จอดรถ",
-    images: ["/images/twitter-image.jpg"],
+      "พื้นที่ให้เช่าตั้งแต่ 30 ตร.ม. พร้อมที่จอดรถ แอร์ ระบบรักษาความปลอดภัย เดินทางสะดวก ติดถนนใหญ่",
+    images: ["/twitter-image.jpg"],
   },
 };
 
@@ -85,7 +85,6 @@ export default async function RootLayout({ children }) {
               <span className="font-[600]">Channakorn</span>
               <span className="text-[#555555]">Office&nbsp;For&nbsp;Rent</span>
             </div>
-
             <Link
               href="tel:0909075310"
               title="โทร 090-907-5310"
@@ -123,10 +122,8 @@ export default async function RootLayout({ children }) {
             >
               <span className="font-[600]">Contact&nbsp;Us</span>
             </Link>
-
             <MobileMenu />
           </div>
-
           <div className="flex items-center justify-center w-full h-full gap-2">
             {children}
           </div>
