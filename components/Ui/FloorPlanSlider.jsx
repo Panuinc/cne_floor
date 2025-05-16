@@ -23,7 +23,7 @@ export default function FloorPlanSlider({ onSelect }) {
             768: { slidesPerView: 2.2 },
             1024: { slidesPerView: 3.2 },
           }}
-          className="w-[1200px] h-[450px]"
+          className="max-w-[1200px] h-[450px]"
         >
           {Array.from({ length: 9 }).map((_, i) => (
             <SwiperSlide key={i}>

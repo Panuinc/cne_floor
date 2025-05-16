@@ -7,8 +7,8 @@ export default function RoomsSection() {
   const t = useTranslations();
   return (
     <>
-      <div className="flex flex-row items-center justify-center w-full h-full p-2 gap-2 bg-default rounded-tl-3xl rounded-tr-3xl">
-        <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2 bg-white shadow-md rounded-3xl">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:w-11/12 h-full p-4 gap-2 bg-white rounded-tl-3xl rounded-tr-3xl">
+        <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full p-2 gap-2">
           <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
             <Image
               src="/images/floorPlan/floor2.png"
@@ -47,7 +47,7 @@ export default function RoomsSection() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2 bg-white shadow-md rounded-3xl">
+        <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full p-2 gap-2">
           <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
             <div className="flex flex-col items-end justify-center w-full h-full">
               <div className="flex items-center justify-start w-full h-full p-2 gap-2 bg-white shadow-md rounded-tl-lg rounded-tr-lg rounded-bl-lg text-3xl font-[600]">
@@ -76,8 +76,8 @@ export default function RoomsSection() {
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-center w-full h-full p-2 gap-2 bg-default rounded-tl-3xl rounded-tr-3xl">
-        <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2 bg-white shadow-md rounded-3xl">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:w-11/12 h-full p-2 gap-2 bg-white rounded-bl-3xl rounded-br-3xl">
+        <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full p-2 gap-2">
           <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
             <Image
               src="/images/floorPlan/floor2.png"
@@ -105,7 +105,7 @@ export default function RoomsSection() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-2 gap-2 bg-white shadow-md rounded-3xl">
+        <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full p-2 gap-2">
           <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
             <div className="flex flex-col items-end justify-center w-full h-full">
               <div className="flex items-center justify-start w-full h-full p-2 gap-2 bg-white shadow-md rounded-tl-lg rounded-tr-lg rounded-bl-lg text-3xl font-[600]">

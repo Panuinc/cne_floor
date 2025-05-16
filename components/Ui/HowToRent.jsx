@@ -12,7 +12,7 @@ export default function HowToRent() {
         . . . {t("howToRent")} . . .
       </div>
       <div className="flex flex-row items-center justify-evenly w-full h-full p-2 gap-2">
-        <div className="flex items-center justify-center min-w-40 min-h-40 p-2 gap-2 rounded-full bg-white shadow-md">
+        <div className="flex items-center justify-center min-w-38 min-h-38 lg:min-w-40 lg:min-h-40 p-2 gap-2 rounded-full bg-white shadow-md">
           <Image
             src="/images/icons/web.png"
             alt="web"
@@ -24,7 +24,7 @@ export default function HowToRent() {
         <Link
           href="https://line.me/ti/p/buwWdN4vVx"
           target="_blank"
-          className="flex items-center justify-center min-w-40 min-h-40 p-2 gap-2 rounded-full bg-white shadow-md animate-bounce cursor-pointer"
+          className="flex items-center justify-center min-w-38 min-h-38 lg:min-w-40 lg:min-h-40 p-2 gap-2 rounded-full bg-white shadow-md animate-bounce cursor-pointer"
         >
           <Image
             src="/images/icons/contact.png"
@@ -34,7 +34,7 @@ export default function HowToRent() {
             height={125}
           />
         </Link>
-        <div className="flex items-center justify-center min-w-40 min-h-40 p-2 gap-2 rounded-full bg-white shadow-md">
+        <div className="flex items-center justify-center min-w-38 min-h-38 lg:min-w-40 lg:min-h-40 p-2 gap-2 rounded-full bg-white shadow-md">
           <Image
             src="/images/icons/po.png"
             alt="po"
