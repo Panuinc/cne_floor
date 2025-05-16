@@ -8,7 +8,7 @@ import { Right } from "../icons/icons";
 export default function HeaderCard() {
   const t = useTranslations();
   return (
-    <div className="relative flex flex-col items-center justify-center w-full h-full px-2 py-8 gap-2 overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center w-full h-full px-2 py-8 gap-2 overflow-hidden bg-white rounded-bl-3xl rounded-br-3xl">
       <Image
         src="/images/logoCompany/com-2.png"
         alt="com-2"

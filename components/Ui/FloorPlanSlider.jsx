@@ -11,8 +11,8 @@ import "swiper/css/pagination";
 export default function FloorPlanSlider({ onSelect }) {
   const t = useTranslations();
   return (
-    <div className="flex items-center justify-center w-full min-h-[500px] p-2 gap-2 border-2 border-dark bg-default rounded-3xl">
-      <div className="w-11/12 h-full p-2 gap-2 border-2 border-dark">
+    <div className="flex items-center justify-center w-full min-h-[500px] p-2 gap-2 bg-default rounded-tl-3xl rounded-tr-3xl">
+      <div className="w-11/12 h-full p-2 gap-2">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 3000 }}
@@ -23,12 +23,12 @@ export default function FloorPlanSlider({ onSelect }) {
             768: { slidesPerView: 2.2 },
             1024: { slidesPerView: 3.2 },
           }}
-          className="w-full h-[420px]"
+          className="w-[1200px] h-[450px]"
         >
           {Array.from({ length: 9 }).map((_, i) => (
             <SwiperSlide key={i}>
               <div
-                className="relative w-full h-full p-2 gap-2 border-2 border-dark rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
+                className="relative w-full h-full p-2 gap-2 rounded-3xl overflow-auto shadow-md group bg-white cursor-pointer"
                 onClick={() => onSelect(`/images/floorPlan/floor${i + 1}.png`)}
               >
                 <Image

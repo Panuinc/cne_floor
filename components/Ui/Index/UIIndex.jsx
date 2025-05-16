@@ -11,9 +11,8 @@ export default function UIIndex() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2">
+    <div className="flex flex-col items-center justify-center w-full h-full">
       <HeaderCard />
-      <HowToRent />
       <FloorPlanSlider onSelect={setSelectedImage} />
       {selectedImage && (
         <div
@@ -38,6 +37,8 @@ export default function UIIndex() {
           </div>
         </div>
       )}
+      <HowToRent />
+
       <RoomsSection />
     </div>
   );
