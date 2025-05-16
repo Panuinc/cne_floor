@@ -108,8 +108,8 @@ export default async function RootLayout({ children }) {
             </Link>
             <div className="hidden lg:flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-xl">
               <span>Call : 0909075310</span>
-              <span>Call : 0896995678</span>
-              <span>Call : 0816444464</span>
+              <span> , 0896995678</span>
+              <span> , 0816444464</span>
               <Star />
             </div>
             <div className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
