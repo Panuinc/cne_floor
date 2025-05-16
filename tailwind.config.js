@@ -16,8 +16,8 @@ module.exports = {
         secondary: "#E1E1E1",
       },
       fontFamily: {
-        mitr: ["var(--mitr)"],
-        teko: ["var(--teko)"],
+        kanit: ["var(--kanit)"],
+        nunito: ["var(--nunito)"],
         sans: ["Sarabun", "sans-serif"],
       },
     },

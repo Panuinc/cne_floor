@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--teko), var(--mitr);
+  font-family: var(--nunito), var(--kanit);
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   color: #545454;
   background-color: #F5F5F5;
 }
 
 [lang|="th"] {
-  font-family: var(--mitr), sans-serif;
+  font-family: var(--kanit), sans-serif;
 }
 
 ::-webkit-scrollbar {

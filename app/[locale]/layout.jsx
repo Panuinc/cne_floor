@@ -1,4 +1,4 @@
-import { Mitr, Teko } from "next/font/google";
+import { Kanit, Nunito } from "next/font/google";
 import "@/style/globals.css";
 import { Chat, Phone, Map, Star } from "@/components/icons/icons";
 import LanguageSwitcher from "@/components/other/LanguageSwitcher";
@@ -7,15 +7,15 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import Link from "next/link";
 
-const mitr = Mitr({
+const kanit = Kanit({
   subsets: ["latin"],
-  variable: "--mitr",
+  variable: "--kanit",
   weight: "300",
   display: "swap",
 });
-const teko = Teko({
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--teko",
+  variable: "--nunito",
   weight: "300",
   display: "swap",
 });
@@ -77,7 +77,7 @@ export default async function RootLayout({ children }) {
   const locale = await getLocale();
 
   return (
-    <body className={`${teko.variable} ${mitr.variable} antialiased`}>
+    <body className={`${nunito.variable} ${kanit.variable} antialiased`}>
       <NextIntlClientProvider>
         <div className="flex flex-col items-center justify-start w-full min-h-screen">
           <div className="flex flex-row items-center justify-center w-full h-full px-2 lg:px-10 py-4 gap-2 bg-white">
