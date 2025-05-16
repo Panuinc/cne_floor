@@ -8,16 +8,16 @@ export default function HeaderCard() {
   const t = useTranslations();
   return (
     <div className="flex flex-col items-center justify-center w-full h-full px-2 py-20 gap-2 border-2 border-dark">
-      <div className="flex items-center justify-center w-full h-full p-4 gap-2 border-2 border-dark text-5xl font-[600]">
+      <div className="flex items-center justify-start w-full h-full p-4 gap-2 border-2 border-dark text-5xl font-[600]">
         <span>{t("header")}</span>
       </div>
-      <div className="flex items-center justify-center w-full h-full p-4 gap-2 border-2 border-dark text-3xl font-[600]">
+      <div className="flex items-center justify-start w-full h-full p-4 gap-2 border-2 border-dark text-3xl font-[600]">
         <span>{t("title")}</span>
       </div>
-      <div className="flex items-center justify-center w-full h-full p-4 gap-2 border-2 border-dark text-xl font-[600]">
+      <div className="flex items-center justify-start w-full h-full p-4 gap-2 border-2 border-dark text-xl font-[600]">
         <span>{t("description")}</span>
       </div>
-      <div className="flex items-center justify-center w-full h-full p-4 gap-2 border-2 border-dark text-sm text-center">
+      <div className="flex items-center justify-start text-start w-full h-full p-4 gap-2 border-2 border-dark text-sm">
         {t("promp")}
       </div>
       <div className="flex items-center justify-center w-full h-full p-4 gap-2 border-2 border-dark">
