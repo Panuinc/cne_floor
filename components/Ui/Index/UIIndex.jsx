@@ -37,6 +37,9 @@ export default function UIIndex() {
           </div>
         </div>
       )}
+      <div className="flex items-center justify-center w-full h-full p-10 gap-2 bg-white">
+        {""}
+      </div>
       <HowToRent />
 
       <RoomsSection />
