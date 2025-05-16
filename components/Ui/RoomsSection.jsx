@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 export default function RoomsSection() {
   const t = useTranslations();
+
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2 bg-white rounded-tl-3xl rounded-tr-3xl">
       <div className="flex flex-col lg:flex-row items-start justify-center w-full lg:w-11/12 h-full p-4 gap-2">
@@ -140,6 +141,21 @@ export default function RoomsSection() {
               priority
               className="transition-transform duration-300 group-hover:scale-150"
             />
+          </div>
+        </div>
+      </div>
+
+      {/* 🏷️ ป้ายติดต่อ Agent แบบเด้ง */}
+      <div className="fixed bottom-8 right-8 z-50">
+        <div className="group relative">
+          <a
+            href="tel:0909075310"
+            className="flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-bold text-lg rounded-full shadow-lg transition-transform duration-300 hover:scale-105 animate-bounce"
+          >
+            📞 {t("contactAgent")}
+          </a>
+          <div className="absolute -top-3 -right-3 bg-red-500 text-white text-xs px-2 py-1 rounded-full shadow">
+            NEW
           </div>
         </div>
       </div>
