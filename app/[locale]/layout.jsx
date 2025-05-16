@@ -52,7 +52,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://cnefloorrent.com/og/og-image.jpg",
+        url: "/images/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "ออฟฟิศให้เช่า งามวงศ์วาน - อาคาร 9 ชั้น พร้อมที่จอดรถ",
@@ -65,7 +65,7 @@ export const metadata = {
       "ออฟฟิศให้เช่า งามวงศ์วาน | อาคาร 9 ชั้น ใกล้เดอะมอลล์ พร้อมที่จอดรถ",
     description:
       "สำนักงานให้เช่าใจกลางงามวงศ์วาน อาคารสูง 9 ชั้น ใกล้เดอะมอลล์ พร้อมที่จอดรถ",
-    images: ["https://cnefloorrent.com/og/og-image.jpg"],
+    images: ["/images/twitter-image.jpg"],
   },
 };
 
@@ -108,7 +108,9 @@ export default async function RootLayout({ children }) {
               <Map />
             </Link>
             <div className="hidden lg:flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-xl">
-              <span>{""}</span>
+              <span>Call : 0909075310</span>
+              <span>Call : 0896995678</span>
+              <span>Call : 0816444464</span>
               <Star />
             </div>
             <div className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
