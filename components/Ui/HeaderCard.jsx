@@ -18,25 +18,25 @@ export default function HeaderCard() {
       />
 
       <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-5xl font-[600] bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
-        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           {t("header")}
         </span>
       </div>
 
       <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-3xl font-[600] bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
-        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           {t("title")}
         </span>
       </div>
 
       <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-xl font-[600] bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
-        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           {t("description")}
         </span>
       </div>
 
       <div className="flex items-center justify-start text-start w-full h-full p-4 gap-2 text-sm whitespace-pre-line bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
-        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           {t("promp")}
         </span>
       </div>
