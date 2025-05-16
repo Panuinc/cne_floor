@@ -79,8 +79,8 @@ export default async function RootLayout({ children }) {
   return (
     <body className={`${teko.variable} ${mitr.variable} antialiased`}>
       <NextIntlClientProvider>
-        <div className="flex flex-col items-center justify-start w-full min-h-screen py-2">
-          <div className="flex flex-row items-center justify-center w-full h-16 px-2 lg:px-10 py-2 gap-2 bg-white">
+        <div className="flex flex-col items-center justify-start w-full min-h-screen">
+          <div className="flex flex-row items-center justify-center w-full h-full px-2 lg:px-10 py-4 gap-2 bg-white">
             <div className="flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-xl">
               <span className="font-[600]">Channakorn</span>
               <span className="text-[#555555]">Office&nbsp;For&nbsp;Rent</span>

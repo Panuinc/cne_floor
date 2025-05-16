@@ -6,8 +6,8 @@ import { useTranslations } from "next-intl";
 export default function RoomsSection() {
   const t = useTranslations();
   return (
-    <>
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:w-11/12 h-full p-4 gap-2 bg-white rounded-tl-3xl rounded-tr-3xl">
+    <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2 bg-white rounded-tl-3xl rounded-tr-3xl">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:w-11/12 h-full p-4 gap-2">
         <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full p-2 gap-2">
           <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
             <Image
@@ -76,7 +76,7 @@ export default function RoomsSection() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:w-11/12 h-full p-2 gap-2 bg-white rounded-bl-3xl rounded-br-3xl">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:w-11/12 h-full p-2 gap-2">
         <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full p-2 gap-2">
           <div className="group flex items-center justify-center w-full lg:w-4/12 h-full p-2 overflow-hidden">
             <Image
@@ -144,6 +144,6 @@ export default function RoomsSection() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
