@@ -8,7 +8,7 @@ import { Right } from "../icons/icons";
 export default function HeaderCard() {
   const t = useTranslations();
   return (
-    <div className="relative flex flex-col items-center justify-center w-full h-full px-2 py-10 gap-2 overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center w-full h-full px-2 py-8 gap-2 overflow-hidden">
       <Image
         src="/images/logoCompany/com-2.png"
         alt="com-2"
@@ -29,13 +29,7 @@ export default function HeaderCard() {
         </span>
       </div>
 
-      <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-xl font-[600] bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
-        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
-          {t("description")}
-        </span>
-      </div>
-
-      <div className="flex items-center justify-start text-start w-full h-full p-4 gap-2 text-sm whitespace-pre-line bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
+      <div className="flex items-center justify-start text-start w-full h-full p-4 gap-2 text-[16px] whitespace-pre-line bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
         <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           {t("promp")}
         </span>

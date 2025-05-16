@@ -27,6 +27,7 @@ export default function HowToRent() {
         </div>
       </div>
       <div className="flex items-center justify-end w-full h-full p-2 gap-2 border-2 border-dark">
+         {t("description")}
         <span>{t("contact")}</span>
         <span>0909075310</span>
         <span>0896995678</span>

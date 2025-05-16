@@ -21,7 +21,7 @@ const teko = Teko({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://cnefloorrent.com"),
+  metadataBase: new URL("https://cnefloorrent.channakorn.co.th"),
   title: "ออฟฟิศให้เช่า งามวงศ์วาน | อาคาร 9 ชั้น ใกล้เดอะมอลล์ พร้อมที่จอดรถ",
   description:
     "สำนักงานให้เช่าใจกลางงามวงศ์วาน อาคารสูง 9 ชั้น พื้นที่เริ่มต้น 30 ตร.ม. พร้อมแอร์ ระบบรักษาความปลอดภัย และที่จอดรถ",
@@ -39,14 +39,14 @@ export const metadata = {
   ],
   icons: {
     icon: "/images/logoCompany/com-1.png",
-    apple: "/opengraph-image.jpg",
+    apple: "/images/logoCompany/com-1.png-image.jpg",
   },
   openGraph: {
     title:
       "ออฟฟิศให้เช่า งามวงศ์วาน | อาคาร 9 ชั้น ใกล้เดอะมอลล์ พร้อมที่จอดรถ",
     description:
       "สำนักงานให้เช่าใจกลางงามวงศ์วาน อาคารสูง 9 ชั้น ใกล้เดอะมอลล์ พร้อมสิ่งอำนวยความสะดวกครบครัน",
-    url: "https://cnefloorrent.com",
+    url: "https://cnefloorrent.channakorn.co.th",
     siteName: "CNE Floor Office Rental",
     locale: "th_TH",
     type: "website",
