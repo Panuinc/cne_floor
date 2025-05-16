@@ -1,5 +1,5 @@
 {
-  "header": "Charnnakorn Engineering",
+  "header": "Channakorn Tower",
   "title": "Prime Office Space for Rent in the Heart of Ngamwongwan",
   "description": "50, Soi Ngamwongwan 57, Lat Yao Subdistrict, Chatuchak District, Bangkok 10900",
   "promp": "Office space for rent in the heart of Ngamwongwan\n\nElevate your business with a 9-story office building located in a prime area near The Mall Ngamwongwan and expressway access.\n\nOffering a variety of rental sizes with full facilities to suit different types of businesses.\n\nProject Highlights:\n\n◒ Prime location on Ngamwongwan Road, close to shopping malls and expressway access\n◒ 9-story building with passenger elevators\n◒ Rental units start from 30 sq.m., suitable for both small and large businesses\n◒ Full facilities: parking, security system, air conditioning, and ready-to-use electricity and water systems\n◒ Easy access by private car and public transport",
@@ -31,5 +31,13 @@
   "room904": "Room 904 - 77 sq.m. *400 / sq.m. (including electricity)",
   "room905": "Room 905 - 27 sq.m. *400 / sq.m. (including electricity)",
   "learnDetails": "View Details",
-   "contactAgent": "Contact Agent"
+  "contactAgent": "Contact Agent",
+  "interior-1": "Interior View 1",
+  "interior-2": "Interior View 2",
+  "interior-3": "Interior View 3",
+  "interior-4": "Interior View 4",
+  "interior-5": "Interior View 5",
+  "interior-6": "Interior View 6",
+  "interior-7": "Interior View 7",
+  "interior-8": "Interior View 8"
 }

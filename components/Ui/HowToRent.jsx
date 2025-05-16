@@ -8,8 +8,8 @@ export default function HowToRent() {
   const t = useTranslations();
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-2 gap-2 bg-default">
-      <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-3xl font-[600]">
-        . . . {t("howToRent")} . . .
+      <div className="flex items-center justify-start w-full h-full p-2 gap-2 text-primary text-3xl font-[600]">
+        {t("howToRent")} . . .
       </div>
       <div className="flex flex-row items-center justify-evenly w-full h-full p-2 gap-2">
         <div className="flex items-center justify-center min-w-38 min-h-38 lg:min-w-40 lg:min-h-40 p-2 gap-2 rounded-3xl bg-white shadow-md">
@@ -44,11 +44,11 @@ export default function HowToRent() {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center w-full h-full p-2 gap-2 text-2xl font-[600]">
+      <div className="flex items-center justify-center w-full h-full p-6 gap-2 text-xl font-[600]">
         {t("description")}
       </div>
 
-      <div className="flex items-center justify-end w-full h-full p-2 gap-2 text-xl font-[600]">
+      <div className="flex items-center justify-end w-full h-full p-6 gap-2 text-md font-[600]">
         <span>{t("contact")}</span>
         <span>0909075310</span>
         <span>0896995678</span>

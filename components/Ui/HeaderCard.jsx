@@ -17,20 +17,20 @@ export default function HeaderCard() {
         className="absolute right-12 top-0 opacity-50 pointer-events-none hidden md:block"
       />
 
-      <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-5xl font-[600] bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
+      <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-5xl font-[600] bg-white text-primary bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
         <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           {t("header")}
         </span>
       </div>
 
-      <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-3xl font-[600] bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
+      <div className="flex items-center justify-start w-full h-full p-4 gap-2 text-3xl font-[600] bg-white text-primary bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
         <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           {t("title")}
         </span>
       </div>
 
-      <div className="flex items-center justify-start text-start w-full h-full p-4 gap-2 text-[16px] whitespace-pre-line bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
-        <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+      <div className="flex items-center justify-start text-start w-full h-full p-0 gap-2 text-[16px] whitespace-pre-line bg-white bg-opacity-80 backdrop-blur lg:bg-transparent lg:backdrop-blur-none">
+        <span className="bg-primary text-white p-4 rounded-3xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
           {t("promp")}
         </span>
       </div>
@@ -39,7 +39,7 @@ export default function HeaderCard() {
         <Link
           href="https://line.me/ti/p/buwWdN4vVx"
           target="_blank"
-          className="flex items-center justify-center w-6/12 lg:w-2/12 h-full p-4 gap-2 rounded-3xl bg-dark text-white shadow-md transition-all duration-300 hover:bg-dark-100 hover:shadow-lg hover:scale-105 active:scale-95 active:bg-dark-200"
+          className="flex items-center justify-center w-6/12 lg:w-2/12 h-full p-4 gap-2 rounded-3xl bg-primary text-white shadow-md transition-all duration-300 hover:bg-dark-100 hover:shadow-lg hover:scale-105 active:scale-95 active:bg-dark-200"
         >
           {t("clickNow")}
         </Link>

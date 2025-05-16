@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Phone } from "../icons/icons";
 
 export default function RoomsSection() {
   const t = useTranslations();
@@ -22,10 +23,10 @@ export default function RoomsSection() {
           </div>
           <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
             <div className="flex flex-col items-end justify-center w-full h-full">
-              <div className="flex items-center justify-start w-full h-full p-2 gap-2 bg-white shadow-md rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl text-3xl font-[600]">
+              <div className="flex items-center justify-start w-full h-full p-2 gap-2 bg-primary text-white shadow-md rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl text-3xl font-[600]">
                 {t("secondFloor")}
               </div>
-              <div className="flex items-center justify-center h-full p-2 gap-2 bg-white shadow-md rounded-bl-3xl rounded-br-3xl text-lg font-[600]">
+              <div className="flex items-center justify-center h-full p-2 gap-2 bg-primary text-white shadow-md rounded-bl-3xl rounded-br-3xl text-lg font-[600]">
                 {t("dividedOffice")}
               </div>
             </div>
@@ -108,10 +109,10 @@ export default function RoomsSection() {
         <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full p-2 gap-2">
           <div className="flex flex-col items-center justify-center w-full lg:w-8/12 h-full p-2 gap-2">
             <div className="flex flex-col items-end justify-center w-full h-full">
-              <div className="flex items-center justify-start w-full h-full p-2 gap-2 bg-white shadow-md rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl text-3xl font-[600]">
+              <div className="flex items-center justify-start w-full h-full p-2 gap-2 bg-primary text-white shadow-md rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl text-3xl font-[600]">
                 {t("ninthFloor")}
               </div>
-              <div className="flex items-center justify-center h-full p-2 gap-2 bg-white shadow-md rounded-bl-3xl rounded-br-3xl text-lg font-[600]">
+              <div className="flex items-center justify-center h-full p-2 gap-2 bg-primary text-white shadow-md rounded-bl-3xl rounded-br-3xl text-lg font-[600]">
                 {t("wholeFloorOffice")}
               </div>
             </div>
@@ -145,17 +146,16 @@ export default function RoomsSection() {
         </div>
       </div>
 
-      {/* 🏷️ ป้ายติดต่อ Agent แบบเด้ง */}
       <div className="fixed bottom-8 right-8 z-50">
         <div className="group relative">
           <a
             href="tel:0909075310"
-            className="flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-bold text-lg rounded-full shadow-lg transition-transform duration-300 hover:scale-105 animate-bounce"
+            className="flex items-center justify-center px-6 py-3 bg-primary text-white font-bold text-lg rounded-full shadow-lg transition-transform duration-300 hover:scale-105 animate-bounce"
           >
-            📞 {t("contactAgent")}
+            <Phone />  {t("contactAgent")}
           </a>
-          <div className="absolute -top-3 -right-3 bg-red-500 text-white text-xs px-2 py-1 rounded-full shadow">
-            NEW
+          <div className="absolute -top-3 -right-3 bg-white text-primary text-xs px-2 py-1 rounded-full shadow">
+            Now!
           </div>
         </div>
       </div>

@@ -80,29 +80,29 @@ export default async function RootLayout({ children }) {
     <body className={`${nunito.variable} ${kanit.variable} antialiased`}>
       <NextIntlClientProvider>
         <div className="flex flex-col items-center justify-start w-full min-h-screen">
-          <div className="flex flex-row items-center justify-center w-full h-full px-2 lg:px-10 py-4 gap-2 bg-white">
+          <div className="flex flex-row items-center justify-center w-full h-20 px-2 lg:px-10 py-4 gap-2 bg-white">
             <div className="flex items-center justify-between w-full h-full p-2 gap-2 border-2 border-default bg-default rounded-xl">
               <span className="font-[600]">Channakorn</span>
-              <span className="text-[#555555]">Office&nbsp;For&nbsp;Rent</span>
+              <span className="text-[#03994C]">Office&nbsp;For&nbsp;Rent</span>
             </div>
             <Link
               href="tel:0909075310"
               title="โทร 090-907-5310"
-              className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl"
+              className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 bg-primary text-white rounded-xl"
             >
               <Phone />
             </Link>
             <Link
               href="https://line.me/ti/p/buwWdN4vVx"
               target="_blank"
-              className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl"
+              className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 bg-primary text-white rounded-xl"
             >
               <Chat />
             </Link>
             <Link
               href="https://www.google.com/maps/dir//50,+ซอย+งามวงศ์วาน+57..."
               target="_blank"
-              className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl"
+              className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 bg-primary text-white rounded-xl"
             >
               <Map />
             </Link>
@@ -112,7 +112,7 @@ export default async function RootLayout({ children }) {
               <span> , 0816444464</span>
               <Star />
             </div>
-            <div className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 border-2 border-secondary rounded-xl">
+            <div className="hidden lg:flex items-center justify-center h-full px-6 py-2 gap-2 bg-primary text-white rounded-xl">
               <LanguageSwitcher />
             </div>
             <Link

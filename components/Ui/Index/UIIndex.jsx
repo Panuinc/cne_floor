@@ -6,6 +6,7 @@ import HeaderCard from "@/components/Ui/HeaderCard";
 import HowToRent from "@/components/Ui/HowToRent";
 import FloorPlanSlider from "@/components/Ui/FloorPlanSlider";
 import RoomsSection from "@/components/Ui/RoomsSection";
+import Interior from "../Interior";
 
 export default function UIIndex() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -43,6 +44,8 @@ export default function UIIndex() {
       <HowToRent />
 
       <RoomsSection />
+
+      <Interior />
     </div>
   );
 }
