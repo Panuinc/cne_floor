@@ -1,5 +1,5 @@
 // app/[locale]/layout.jsx
-import { Prompt, League_Spartan } from "next/font/google";
+import { Mitr, Teko } from "next/font/google";
 import "@/style/globals.css";
 import { Chat, Phone, Map, Star } from "@/components/icons/icons";
 import LanguageSwitcher from "@/components/other/LanguageSwitcher";
@@ -8,15 +8,15 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import Link from "next/link";
 
-const prompt = Prompt({
+const mitr = Mitr({
   subsets: ["latin"],
-  variable: "--prompt",
+  variable: "--mitr",
   weight: "300",
   display: "swap",
 });
-const leagueSpartan = League_Spartan({
+const leagueSpartan = Teko({
   subsets: ["latin"],
-  variable: "--league_Spartan",
+  variable: "--teko",
   weight: "300",
   display: "swap",
 });
@@ -35,7 +35,7 @@ export default async function RootLayout({ children }) {
 
   return (
     <body
-      className={`${leagueSpartan.variable} ${prompt.variable} antialiased`}
+      className={`${leagueSpartan.variable} ${mitr.variable} antialiased`}
     >
       <NextIntlClientProvider>
         <div className="flex flex-col items-center justify-start w-full min-h-screen py-2 gap-2">

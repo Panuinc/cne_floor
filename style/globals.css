@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--league_Spartan), var(--prompt);
+  font-family: var(--teko), var(--mitr);
   font-weight: 300;
-  font-size: 1.0rem;
+  font-size: 1.25rem;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 [lang|="th"] {
-  font-family: var(--prompt), sans-serif;
+  font-family: var(--mitr), sans-serif;
 }
 
 ::-webkit-scrollbar {

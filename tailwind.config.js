@@ -16,8 +16,8 @@ module.exports = {
         secondary: "#E1E1E1",
       },
       fontFamily: {
-        prompt: ["var(--prompt)"],
-        league_Spartan: ["var(--league_Spartan)"],
+        mitr: ["var(--mitr)"],
+        teko: ["var(--teko)"],
         sans: ["Sarabun", "sans-serif"],
       },
     },
