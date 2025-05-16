@@ -1,4 +1,3 @@
-// app/[locale]/layout.jsx
 import { Mitr, Teko } from "next/font/google";
 import "@/style/globals.css";
 import { Chat, Phone, Map, Star } from "@/components/icons/icons";
@@ -34,9 +33,7 @@ export default async function RootLayout({ children }) {
   const locale = await getLocale();
 
   return (
-    <body
-      className={`${leagueSpartan.variable} ${mitr.variable} antialiased`}
-    >
+    <body className={`${leagueSpartan.variable} ${mitr.variable} antialiased`}>
       <NextIntlClientProvider>
         <div className="flex flex-col items-center justify-start w-full min-h-screen py-2 gap-2">
           <div className="flex flex-row items-center justify-center w-full h-16 px-2 lg:px-10 py-2 gap-2">
