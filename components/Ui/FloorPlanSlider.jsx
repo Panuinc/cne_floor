@@ -42,10 +42,10 @@ export default function FloorPlanSlider({ onSelect }) {
                 <div className="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-lg rounded-t-3xl bg-dark text-white">
                   <div>{t(`floor${i + 1}`)}</div>
                 </div>
-                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-full shadow-md">
+                <button className="absolute top-3 left-3 px-3 py-1 bg-dark text-white rounded-3xl shadow-md">
                   {t("learnDetails")}
                 </button>
-                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-full shadow-md">
+                <button className="absolute top-3 right-3 w-8 h-8 bg-dark text-white rounded-3xl shadow-md">
                   →
                 </button>
               </div>

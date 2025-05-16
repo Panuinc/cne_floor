@@ -6,7 +6,6 @@ import HeaderCard from "@/components/Ui/HeaderCard";
 import HowToRent from "@/components/Ui/HowToRent";
 import FloorPlanSlider from "@/components/Ui/FloorPlanSlider";
 import RoomsSection from "@/components/Ui/RoomsSection";
-import Interior from "@/components/Ui/Interior";
 
 export default function UIIndex() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -20,7 +19,7 @@ export default function UIIndex() {
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative w-full max-w-5xl h-[90vh] bg-white rounded-lg">
+          <div className="relative w-full max-w-5xl h-[90vh] bg-white rounded-3xl">
             <Image
               src={selectedImage}
               alt="Preview"
@@ -31,7 +30,7 @@ export default function UIIndex() {
             />
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 bg-white text-black rounded-full px-3 py-1 shadow-md z-50"
+              className="absolute top-4 right-4 rounded-3xl w-10 h-10 p-2 bg-dark text-white shadow-md z-50"
             >
               ✕
             </button>
@@ -44,8 +43,6 @@ export default function UIIndex() {
       <HowToRent />
 
       <RoomsSection />
-
-      <Interior />
     </div>
   );
 }
